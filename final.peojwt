@@ -22,7 +22,7 @@ class paddle(Sprite):
         if self.y>0:
             self.y-=15
     def moveDown(self,event):
-        if self.y<390:
+        if self.y<385:
             self.y+=15
     
 
