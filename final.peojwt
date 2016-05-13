@@ -10,7 +10,7 @@ class pong(App):
         Sprite(RectangleAsset(500,5,thinline,black), (0,495))
         Sprite(RectangleAsset(5,500,thinline,black), (0,0))
         paddle1((470,0))
-        paddle2((5,0))
+        paddle2((10,0))
         
 class paddle(Sprite):
     def __init__(self, asset, position):
