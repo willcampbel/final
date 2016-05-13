@@ -12,7 +12,7 @@ class pong(App):
         paddle((450,0))
         
 class paddle(Sprite):
-    asset=RectangleAsset(50,100,thinline,black)
+    asset=RectangleAsset(25,100,thinline,black)
     def __init__(self, position):
         super().__init__(paddle.asset, position)
         self.fxcenter = self.fycenter = 0.5
