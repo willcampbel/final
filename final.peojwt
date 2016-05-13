@@ -1,1 +1,4 @@
-print("Hello, world.")
+from ggame import App, LineStyle, CircleAsset, RectangleAsset, Sprite, Color
+black = Color(0x000000, 1.0)
+thinline = LineStyle(0,black)
+
