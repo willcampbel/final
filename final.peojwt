@@ -13,8 +13,8 @@ class pong(App):
         #paddle2((0,0))
         
 class paddle(Sprite):
-    def __init__(self, position):
-        super().__init__(paddle.asset, position)
+    def __init__(self, asset, position):
+        super().__init__(asset, position)
         self.fxcenter = self.fycenter = 0.5
     def moveUp(self,event):
         if self.y>0:
