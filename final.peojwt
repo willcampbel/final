@@ -5,4 +5,7 @@ thinline = LineStyle(0,black)
 class pong(App):
     def __init__(self):
         super().__init__()
+        Sprite(RectangleAsset(1000,5,thinline,black), (0,0))
+        
+        
 
