@@ -7,7 +7,7 @@ class pong(App):
         super().__init__()
         Sprite(RectangleAsset(500,5,thinline,black), (0,0))
         Sprite(RectangleAsset(5,500,thinline,black), (500,0))
-        Sprite(RectangleAsset(500,5,thinline,black), (0,500))
+        Sprite(RectangleAsset(500,5,thinline,black), (0,495))
         Sprite(RectangleAsset(5,500,thinline,black), (0,0))
         paddle((495,0))
         
