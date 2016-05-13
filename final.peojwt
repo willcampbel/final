@@ -9,21 +9,25 @@ class pong(App):
         Sprite(RectangleAsset(5,500,thinline,black), (500,0))
         Sprite(RectangleAsset(500,5,thinline,black), (0,495))
         Sprite(RectangleAsset(5,500,thinline,black), (0,0))
-        paddle((470,0))
+        paddle1((470,0))
+        #paddle2((0,0))
         
 class paddle(Sprite):
-    asset=RectangleAsset(25,100,thinline,black)
     def __init__(self, position):
         super().__init__(paddle.asset, position)
         self.fxcenter = self.fycenter = 0.5
-        pong.listenKeyEvent('keydown', 'up arrow', self.moveUp)
-        pong.listenKeyEvent('keydown', 'down arrow', self.moveDown)
     def moveUp(self,event):
         if self.y>0:
             self.y-=10
     def moveDown(self,event):
         if self.y<400:
             self.y+=10
+class paddle1(paddle):
+    asset=RectangleAsset(25,100,thinline,black)
+    def __init__(self, position):
+        super.__init__(paddle1.asset, position)
+        pong.listenKeyEvent('keydown', 'up arrow', self.moveUp)
+        pong.listenKeyEvent('keydown', 'down arrow', self.moveDown)
     
 
         
