@@ -6,8 +6,8 @@ class pong(App):
     def __init__(self):
         super().__init__()
         Sprite(RectangleAsset(500,5,thinline,black), (0,0))
+        Sprite(RectangleAsset(5,500,thinline,black), (500,0))
         Sprite(RectangleAsset(500,5,thinline,black), (500,0))
-        Sprite(RectangleAsset(500,5,thinline,black), (-500,0))
         
 pong().run()
 
