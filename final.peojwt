@@ -9,8 +9,10 @@ class pong(App):
         Sprite(RectangleAsset(5,500,thinline,black), (500,0))
         Sprite(RectangleAsset(500,5,thinline,black), (0,500))
         Sprite(RectangleAsset(5,500,thinline,black), (0,0))
+        paddle((495,0))
         
 class paddle(Sprite):
+    asset=RectangleAsset(50,100,thinline,black)
     def __init__(self, position):
         super().__init__(paddle.asset, position)
         self.fxcenter = self.fycenter = 0.5
