@@ -9,7 +9,7 @@ class pong(App):
         Sprite(RectangleAsset(5,500,thinline,black), (500,0))
         Sprite(RectangleAsset(500,5,thinline,black), (0,495))
         Sprite(RectangleAsset(5,500,thinline,black), (0,0))
-        paddle((475,0))
+        paddle((470,0))
         
 class paddle(Sprite):
     asset=RectangleAsset(25,100,thinline,black)
