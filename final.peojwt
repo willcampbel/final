@@ -20,10 +20,10 @@ class paddle(Sprite):
         pong.listenKeyEvent('keydown', 'down arrow', self.moveDown)
     def moveUp(self,event):
         if self.y>0:
-            self.y-=15
+            self.y-=10
     def moveDown(self,event):
-        if self.y<385:
-            self.y+=15
+        if self.y<400:
+            self.y+=10
     
 
         
